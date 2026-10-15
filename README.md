@@ -12,6 +12,7 @@
 ![Java](https://img.shields.io/badge/Java-native-F59E0B?style=flat-square)
 ![Offline](https://img.shields.io/badge/Offline-100%25-64748B?style=flat-square)
 [![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-8B5CF6?style=flat-square)](https://github.com/Renamekk/Click-Counter/releases/tag/v1.0.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-0EA5E9?style=flat-square)](LICENSE)
 
 ### [Скачать APK](https://github.com/Renamekk/Click-Counter/releases/latest)
 
@@ -80,3 +81,7 @@ artifacts/
 `assembleRelease` и `lintRelease` выполнены успешно: 0 ошибок lint, 13 предупреждений. Подпись APK и выравнивание ZIP проверены. Проверка интерфейса и поведения на реальном телефоне пока не выполнена.
 
 Основной экран: [`MainActivity.java`](app/src/main/java/app/clickcounter/MainActivity.java).
+
+## Лицензия
+
+[MIT](LICENSE) · Copyright (c) 2026 Renamekk.

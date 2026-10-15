@@ -12,6 +12,7 @@ A minimal Android counter with a dark metal interface.
 ![Java](https://img.shields.io/badge/Java-native-F59E0B?style=flat-square)
 ![Offline](https://img.shields.io/badge/Offline-100%25-64748B?style=flat-square)
 [![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-8B5CF6?style=flat-square)](https://github.com/Renamekk/Click-Counter/releases/tag/v1.0.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-0EA5E9?style=flat-square)](LICENSE)
 
 ### [Download APK](https://github.com/Renamekk/Click-Counter/releases/latest)
 
@@ -80,3 +81,7 @@ A local signing key is created on the first build. **Keep `.signing/` and `signi
 `assembleRelease` and `lintRelease` passed: 0 lint errors and 13 warnings. The APK signature and ZIP alignment were verified. On-device interface and behavior testing is still pending.
 
 Main screen: [`MainActivity.java`](app/src/main/java/app/clickcounter/MainActivity.java).
+
+## License
+
+[MIT](LICENSE) · Copyright (c) 2026 Renamekk.
