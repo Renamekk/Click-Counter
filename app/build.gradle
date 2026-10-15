@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+}
+
+def signingFile = rootProject.file('signing.properties')
+def signingValues = new Properties()
+if (signingFile.exists()) {
+    signingFile.withInputStream { signingValues.load(it) }
+}
+
+android {
+    namespace = 'app.clickcounter'
+    compileSdk = 36
+    buildToolsVersion = '36.0.0'
+
+    defaultConfig {
+        applicationId = 'app.clickcounter'
+        minSdk = 26
+        targetSdk = 36
+        versionCode = 1
+        versionName = '1.0.0'
+    }
+
+    if (signingFile.exists()) {
+        signingConfigs {
+            release {
+                storeFile = rootProject.file(signingValues['storeFile'])
+                storePassword = signingValues['storePassword']
+                keyAlias = signingValues['keyAlias']
+                keyPassword = signingValues['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            if (signingFile.exists()) {
+                signingConfig = signingConfigs.release
+            }
+            minifyEnabled = false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+}
